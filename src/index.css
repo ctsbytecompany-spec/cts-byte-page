@@ -76,11 +76,40 @@ a {
   color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
   transition: color 0.2s ease;
+}
 
-  &:hover {
-    color: #ffffff;
-    cursor: default;
-  }
+.brand-name:hover {
+  color: #ffffff;
+  cursor: default;
+}
+
+.lang-switcher {
+  display: flex;
+  gap: 4px;
+  margin-left: 8px;
+}
+
+.lang-btn {
+  padding: 4px 10px;
+  font-size: 12px;
+  font-weight: 600;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+  transition: color 0.2s, background 0.2s, border-color 0.2s;
+}
+
+.lang-btn:hover {
+  color: #ffffff;
+  border-color: var(--primary);
+}
+
+.lang-btn--active {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #ffffff;
 }
 
 .hero {
